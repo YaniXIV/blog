@@ -1,6 +1,6 @@
-baseURL = "https://example.com/"
+baseURL = "https://yanixiv.com/"
 languageCode = "en-us"
-title = "Yani XIV"
+title = "YaniXIV"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "term"]
   posts = "/posts/:slug/"
 
 [params]
-  subtitle = "Notes on zero-knowledge, cryptography, and systems"
+  subtitle = "Notes on zero-knowledge cryptography, and systems"
   email = "yanixiv.dev@gmail.com"
   github = "https://github.com/YaniXIV"
   telegram = "https://t.me/YaniXIV"
