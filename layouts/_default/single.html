@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+  <header class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ if .Date }}
+    <p class="article-meta">{{ .Date.Format "2006-01-02" }}</p>
+    {{ end }}
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{ if eq .Section "posts" }}
+  <nav class="post-nav" aria-label="Post navigation">
+    {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}">&larr; newer</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}">older &rarr;</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+</article>
+{{ end }}

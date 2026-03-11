@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yani XIV</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Yani XIV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting This Notebook</title>
+      <link>http://localhost:1313/posts/starting-this-notebook/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/starting-this-notebook/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to start writing things down for a while.&lt;/p&gt;&#xA;&lt;p&gt;Most of my time lately has gone into zero-knowledge systems, especially things around Noir, Go and the intersection between AI ethics and zero knowledge systems. I spend a lot of time experimenting with ideas for fun, reading code, and building small tools to understand how these systems actually work.&lt;/p&gt;&#xA;&lt;p&gt;This site is basically a place to collect those notes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Yani. My legal name is Omar, but most people call me Yani, and that&amp;rsquo;s the name I use online.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a developer interested in systems programming, cryptography, and zero-knowledge proofs. Lately most of my time has gone into the ZK ecosystem, especially things like Noir, gnark, constraint systems, and tooling around them.&lt;/p&gt;&#xA;&lt;p&gt;I mostly work in Go. I like building low-level tools, understanding how things work internally, and experimenting with new ideas. Programming is something I do largely because I enjoy it, so many of the projects I work on start as curiosity-driven experiments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;I’m always happy to hear from people, so feel free to reach out. I&amp;rsquo;m always glad to talk about ideas, projects, or interesting problems.&lt;/p&gt;&#xA;&lt;p&gt;The best way to reach me by far is email. I check it constantly, probably more than I should. Other methods work too.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:yanixiv.dev@gmail.com&#34;&gt;yanixiv.dev@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/YaniXIV&#34;&gt;YaniXIV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Telegram: &lt;a href=&#34;https://t.me/YaniXIV&#34;&gt;@YaniXIV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re reaching out about cryptography, zero-knowledge systems, or systems tooling, feel free to include a short note about what you&amp;rsquo;re building.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;A short list of active work.&lt;/p&gt;&#xA;&lt;h2 id=&#34;noir-go&#34;&gt;noir-go&lt;/h2&gt;&#xA;&lt;p&gt;A Go library for compiling Noir circuits without requiring a local Noir toolchain.&lt;/p&gt;&#xA;&lt;p&gt;The Noir compiler runs inside an embedded WASM binary using wazero, so Go projects can compile Noir circuits without installing Nargo or Rust. The library resolves the Noir project structure, invokes the compiler, and returns the resulting ACIR artifact along with ABI and witness metadata.&lt;/p&gt;&#xA;&lt;p&gt;The goal is to make Go a practical environment for working with Noir circuits.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

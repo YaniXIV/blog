@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  {{ with .Site.Params.github }}
+  <a href="{{ . }}">github</a>
+  {{ end }}
+  {{ with .Site.Params.email }}
+  <a href="mailto:{{ . }}">email</a>
+  {{ end }}
+  <a href="{{ "index.xml" | relURL }}">rss</a>
+</footer>

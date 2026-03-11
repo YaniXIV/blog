@@ -1,3 +1,50 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Yani XIV"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 20
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[params]
+  subtitle = "Notes on zero-knowledge, cryptography, and systems"
+  email = "yanixiv.dev@gmail.com"
+  github = "https://github.com/YaniXIV"
+  telegram = "https://t.me/YaniXIV"
+
+[menu]
+  [[menu.main]]
+    name = "posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "about me"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "github"
+    url = "https://github.com/YaniXIV"
+    weight = 4
+  [[menu.main]]
+    name = "contact"
+    url = "/contact/"
+    weight = 5
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    noClasses = true
+    style = "nord"
+    lineNos = false

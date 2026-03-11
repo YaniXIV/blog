@@ -1,0 +1,11 @@
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+  {{ with .Site.Params.subtitle }}
+  <p class="site-subtitle">{{ . }}</p>
+  {{ end }}
+  <nav class="site-nav" aria-label="Main navigation">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes on Constraint Systems | Yani XIV</title>
+<meta name="description" content="Notes on zero-knowledge, cryptography, and systems">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <h1 class="site-title"><a href="/">Yani XIV</a></h1>
+  
+  <p class="site-subtitle">Notes on zero-knowledge, cryptography, and systems</p>
+  
+  <nav class="site-nav" aria-label="Main navigation">
+    
+    <a href="/posts/">posts</a>
+    
+    <a href="/about/">about me</a>
+    
+    <a href="/projects/">projects</a>
+    
+    <a href="https://github.com/YaniXIV">github</a>
+    
+    <a href="/contact/">contact</a>
+    
+  </nav>
+</header>
+
+    <main class="content">
+      
+<article>
+  <header class="article-header">
+    <h1>Notes on Constraint Systems</h1>
+    
+    <p class="article-meta">2026-03-01</p>
+    
+  </header>
+
+  <div class="prose">
+    <p>I have been collecting short notes on how to reason about constraint systems in practice.</p>
+<h2 id="working-model">Working Model</h2>
+<p>Treat each constraint as a local rule and each witness assignment as a global consistency check. In code, I try to keep this idea explicit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#81a1c1;font-weight:bold">for</span> gate <span style="color:#81a1c1;font-weight:bold">in</span> circuit<span style="color:#eceff4">.</span>gates<span style="color:#eceff4">()</span> <span style="color:#eceff4">{</span>
+</span></span><span style="display:flex;"><span>    gate<span style="color:#eceff4">.</span>enforce<span style="color:#eceff4">(</span><span style="color:#81a1c1">&amp;</span>witness<span style="color:#eceff4">)</span><span style="color:#81a1c1">?</span><span style="color:#eceff4">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#eceff4">}</span>
+</span></span></code></pre></div><p>This keeps debugging straightforward when a prover fails unexpectedly.</p>
+<h2 id="practical-reminder">Practical Reminder</h2>
+<p>Small circuits with clear invariants are often better than dense encodings that are hard to audit.</p>
+
+  </div>
+
+  
+  <nav class="post-nav" aria-label="Post navigation">
+    
+    <a href="/posts/system-design-latency-budgets/">&larr; newer</a>
+    
+    
+  </nav>
+  
+</article>
+
+    </main>
+  </div>
+</body>
+</html>

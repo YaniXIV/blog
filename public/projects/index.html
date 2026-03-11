@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Yani XIV</title>
+<meta name="description" content="Notes on zero-knowledge, cryptography, and systems">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <h1 class="site-title"><a href="/">Yani XIV</a></h1>
+  
+  <p class="site-subtitle">Notes on zero-knowledge, cryptography, and systems</p>
+  
+  <nav class="site-nav" aria-label="Main navigation">
+    
+    <a href="/posts/">posts</a>
+    
+    <a href="/about/">about me</a>
+    
+    <a href="/projects/">projects</a>
+    
+    <a href="https://github.com/YaniXIV">github</a>
+    
+    <a href="/contact/">contact</a>
+    
+  </nav>
+</header>
+
+    <main class="content">
+      
+<article>
+  <header class="article-header">
+    <h1>Projects</h1>
+    
+  </header>
+
+  <div class="prose">
+    <p>A short list of active work.</p>
+<h2 id="noir-go">noir-go</h2>
+<p>A Go library for compiling Noir circuits without requiring a local Noir toolchain.</p>
+<p>The Noir compiler runs inside an embedded WASM binary using wazero, so Go projects can compile Noir circuits without installing Nargo or Rust. The library resolves the Noir project structure, invokes the compiler, and returns the resulting ACIR artifact along with ABI and witness metadata.</p>
+<p>The goal is to make Go a practical environment for working with Noir circuits.</p>
+<p>Pipeline stage:</p>
+<p>Noir source → <strong>ACIR</strong></p>
+<p>Repository: <a href="https://github.com/YaniXIV/noir-go">https://github.com/YaniXIV/noir-go</a></p>
+<hr>
+<h2 id="noir-gnark">noir-gnark</h2>
+<p>A pure Go backend for proving and verifying Noir circuits using gnark.</p>
+<p>This project takes the ACIR artifact produced by <code>noir-go</code>, translates it into gnark constraints, and generates Groth16 proofs. The goal is to support the full Noir workflow from Go without FFI, Rust dependencies, or external tooling.</p>
+<p>Pipeline stage:</p>
+<p>ACIR → <strong>R1CS → Groth16 proof</strong></p>
+<p>Repository: <a href="https://github.com/YaniXIV/noir-gnark">https://github.com/YaniXIV/noir-gnark</a></p>
+<hr>
+<p>Together these projects aim to support a full Go-native workflow for Noir circuits:</p>
+<p>Noir circuit → <strong>ACIR (<code>noir-go</code>) → R1CS → proof (<code>noir-gnark</code>)</strong></p>
+
+  </div>
+
+  
+</article>
+
+    </main>
+  </div>
+</body>
+</html>

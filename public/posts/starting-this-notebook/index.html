@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starting This Notebook | Yani XIV</title>
+<meta name="description" content="Notes on zero-knowledge, cryptography, and systems">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <h1 class="site-title"><a href="/">Yani XIV</a></h1>
+  
+  <p class="site-subtitle">Notes on zero-knowledge, cryptography, and systems</p>
+  
+  <nav class="site-nav" aria-label="Main navigation">
+    
+    <a href="/posts/">posts</a>
+    
+    <a href="/about/">about me</a>
+    
+    <a href="/projects/">projects</a>
+    
+    <a href="https://github.com/YaniXIV">github</a>
+    
+    <a href="/contact/">contact</a>
+    
+  </nav>
+</header>
+
+    <main class="content">
+      
+<article>
+  <header class="article-header">
+    <h1>Starting This Notebook</h1>
+    
+    <p class="article-meta">2026-03-10</p>
+    
+  </header>
+
+  <div class="prose">
+    <p>I&rsquo;ve been meaning to start writing things down for a while.</p>
+<p>Most of my time lately has gone into zero-knowledge systems, especially things around Noir, Go and the intersection between AI ethics and zero knowledge systems. I spend a lot of time experimenting with ideas for fun, reading code, and building small tools to understand how these systems actually work.</p>
+<p>This site is basically a place to collect those notes.</p>
+<p>Some posts will be short write-ups about things I&rsquo;m trying to understand. Others will be notes from projects I&rsquo;m building, experiments that worked (or didn&rsquo;t), or rough explanations of concepts that took me a while to wrap my head around.</p>
+<p>Right now I&rsquo;m working on a couple projects around the Noir ecosystem.</p>
+<p>One of them is <code>noir-go</code>, which embeds the Noir compiler in WASM so Go programs can compile Noir circuits without needing the full Noir toolchain.</p>
+<p>Another recent one is <code>noir-gnark</code>, which experiments with translating ACIR into gnark constraints so proofs can be generated entirely from Go.</p>
+<p>The rough idea looks like this:</p>
+<p>Noir circuit → ACIR → R1CS → Groth16 proof</p>
+<p>The goal is to make Go a first-class environment for working with Noir circuits.</p>
+<p>I&rsquo;ll probably write about things like:</p>
+<ul>
+<li>constraint systems</li>
+<li>ACIR and R1CS</li>
+<li>proof systems</li>
+<li>Go tooling around ZK</li>
+<li>experiments around verifiable AI systems</li>
+</ul>
+<p>Some posts will probably be rough drafts or thinking-out-loud notes. That&rsquo;s intentional. This is meant to be more of a notebook than a polished publication.</p>
+<p>If something here is useful to someone else working on similar problems, that&rsquo;s a nice bonus.</p>
+
+  </div>
+
+  
+  <nav class="post-nav" aria-label="Post navigation">
+    
+    
+  </nav>
+  
+</article>
+
+    </main>
+  </div>
+</body>
+</html>

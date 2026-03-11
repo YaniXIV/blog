@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section>
+  <ul class="post-list" aria-label="Posts">
+    {{ range (sort (where .Site.RegularPages "Section" "posts") "Date" "desc") }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ else }}
+    <li>No posts yet.</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
